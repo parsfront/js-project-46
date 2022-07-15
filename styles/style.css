@@ -1,17 +1,16 @@
 ﻿@font-face {
-    font-family: 'vazir';
-    src: url('../fonts/vazir.eot') format('eot'),
-     url('../fonts/vazir.ttf') format('truetype'),
-    url('../fonts/vazir.woff') format('woff'),
-    url('../fonts/vazir.woff2') format('woff2');
+    font-family: "vazir";
+    src: url("../fonts/vazir.eot") format("eot"), url("../fonts/vazir.ttf") format("truetype"), url("../fonts/vazir.woff") format("woff"), url("../fonts/vazir.woff2") format("woff2");
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
 }
-body{
-    font-family: 'vazir';
-    direction: rtl;
+
+body {
+    font-family: "vazir";
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,39 +19,38 @@ body{
     background: #01b167;
 }
 
-.container{
+.container {
     width: 80%;
     margin: 80px auto;
 }
 
-.container h1{
+.container h1 {
     color: #fff;
     text-align: center;
     font-size: 40px;
     padding: 60px 0;
 }
 
-
-.row{
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.col{
+.col {
     width: calc(50% - 20px);
 }
 
-.col img{
+.col img {
     width: 100%;
 }
 
-.col .feature-img{
+.col .feature-img {
     width: 100%;
     position: relative;
 }
 
-.col .btn-play{
+.col .btn-play {
     width: 80px;
     height: 80px;
     position: absolute;
@@ -66,7 +64,7 @@ body{
     cursor: pointer;
 }
 
-.col .small-img-row{
+.col .small-img-row {
     background: #fff;
     display: flex;
     margin-top: 25px;
@@ -74,45 +72,46 @@ body{
     height: 120px;
 }
 
-.col .small-img-row:nth-child(1){
+.col .small-img-row:nth-child(1) {
     margin-top: 0;
 }
-.col .small-img-row .small-img{
+
+.col .small-img-row .small-img {
     position: relative;
     height: 100%;
 }
-.col .small-img-row .small-img .btn-play{
+
+.col .small-img-row .small-img .btn-play {
     width: 60px;
     height: 60px;
 }
 
-.col .small-img-row .small-img .cover{
+.col .small-img-row .small-img .cover {
     width: 200px;
     height: 100%;
 }
 
-.col .small-img-row p{
-  padding:   0 30px
+.col .small-img-row p {
+    padding: 0 30px;
 }
 
-
-.video-player{
+.video-player {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
     width: 80%;
 }
 
-#videoPlayer{
+#videoPlayer {
     display: none;
 }
 
-.close-btn{
+.close-btn {
     width: 40px;
     position: absolute;
     top: 10px;
