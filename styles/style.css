@@ -1,0 +1,121 @@
+﻿@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot') format('eot'),
+     url('../fonts/vazir.ttf') format('truetype'),
+    url('../fonts/vazir.woff') format('woff'),
+    url('../fonts/vazir.woff2') format('woff2');
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'vazir';
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #01b167;
+}
+
+.container{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.container h1{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    padding: 60px 0;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col{
+    width: calc(50% - 20px);
+}
+
+.col img{
+    width: 100%;
+}
+
+.col .feature-img{
+    width: 100%;
+    position: relative;
+}
+
+.col .btn-play{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.col .small-img-row{
+    background: #fff;
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    height: 120px;
+}
+
+.col .small-img-row:nth-child(1){
+    margin-top: 0;
+}
+.col .small-img-row .small-img{
+    position: relative;
+    height: 100%;
+}
+.col .small-img-row .small-img .btn-play{
+    width: 60px;
+    height: 60px;
+}
+
+.col .small-img-row .small-img .cover{
+    width: 200px;
+    height: 100%;
+}
+
+.col .small-img-row p{
+  padding:   0 30px
+}
+
+
+.video-player{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    width: 80%;
+}
+
+#videoPlayer{
+    display: none;
+}
+
+.close-btn{
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
